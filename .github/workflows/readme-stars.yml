@@ -9,6 +9,8 @@ on:
 jobs:
     update-readme:
         runs-on: ubuntu-latest
+        environment:
+            name: main
         if: ${{ vars.AOC_ENABLED == 'true' }}
         permissions:
             contents: write
